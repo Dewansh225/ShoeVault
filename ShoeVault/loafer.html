@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page 1</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --background-color: #ffffff;
+        --background-color-secondary: #dadcda;
+        --primary-color: #333;
+        --brand-color: #000;
+      }
+        body {
+            font-family: Arial, sans-serif;
+        }
+    
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: var(--background-color);
+}
+.nav-links .contact-border
+{
+  border: 4px solid black;
+}
+.navbar  ul{
+  margin-right: 150px;
+}
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--brand-color);
+  margin-left: 50px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links .contact-border{
+  border: 4px solid black;
+  padding: 10px;
+}
+.nav-links li {
+  margin-left: 35px;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+.navbar .brand a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: var(--brand-color);
+}
+
+
+.navbar-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 917px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--background-color-secondary);
+    width: 100%;
+    text-align:center;
+    padding: 10px;
+    display: none;
+    z-index: 5;
+  }
+  .nav-links .contact-border{
+    border:none;
+  }
+  .navbar-toggle{
+    z-index: 10;
+  }
+  .nav-links.active {
+    display: block; 
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+
+
+
+
+        .Athletic-Sneakers{
+            background-color: #0a0a0a;
+            padding: 1rem;
+            color: white;
+            text-align: center;
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 2rem;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .product img {
+            width: 200px;
+            height: auto;
+            margin-right: 2rem;
+        }
+        .product h2 {
+            margin: 0;
+            color: #006400;
+        }
+        .product p {
+            color: #555;
+        }
+        @media (max-width: 815px) {
+          .product {
+            display: flex;
+            flex-direction: column;
+            
+          }
+        }
+        .footer {
+            background-color: #1d1e1d;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100vw;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="brand " ><a href="./index.html#home">ShoeVault</a></div>
+    <button class="navbar-toggle" id="navbar-toggles" >
+      ☰
+    </button>
+    <ul class="nav-links" id="nav-linkss">
+      <li><a href="./index.html#home">Home</a></li>
+      <li><a href="./index.html#about">About</a></li>
+      <li><a href="./index.html#products">Products</a></li>
+      <li class="contact-border"><a href="./index.html#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+    <div class="Athletic-Sneakers">
+        <h1>Casual Loafer</h1>
+    </div>
+
+    <div class="container">
+        <div class="product">
+            <img src="./assets/images/athletic.jpeg" alt="Athletic Sneakers">
+            <div>
+                <h2>Casual Loafer</h2>
+                <p>Discover the perfect blend of comfort and casual elegance with our stylish loafers. Designed for easy wear, these loafers feature a slip-on style that makes getting ready a breeze. Ideal for everyday outings, they provide a relaxed yet sophisticated look that pairs well with jeans, chinos, or shorts. The soft lining and cushioned insole ensure all-day comfort, while the durable outsole provides stability and grip. Whether you're heading out for a casual brunch or a stroll in the park, our loafers are the go-to choice for effortless style and comfort. Elevate your casual wardrobe with these versatile shoes!</p>
+            </div>
+        </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Our Company. All rights reserved.</p>
+    </div>
+<script>
+
+  const toggleButton = document.getElementById('navbar-toggles');
+const navLinks = document.getElementById('nav-linkss');
+
+toggleButton.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+</script>
+</body>
+</html>

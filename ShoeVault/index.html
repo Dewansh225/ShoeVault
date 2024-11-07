@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShoeVault</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="brand " ><a href="#home">ShoeVault</a></div>
+    <button class="navbar-toggle" id="navbar-toggles" >
+      ☰
+    </button>
+    <ul class="nav-links" id="nav-linkss">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li class="contact-border"><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+  <!-- home section  -->
+  
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>ShoeVault</h1>
+      <p>Step into style with our curated shoe collection.</p>
+      <a href="#products" class="btn">View Products</a>
+    </div>
+  </section>
+
+  <!-- about section  -->
+
+  <section class="about" id="about">
+
+    <div class="left">
+      <p>Solutions that suit you</p>
+      <h6>We work collaboratively with our clients to uncover the most effective and efficient way to achieve their needs.</h6>
+
+    <p>At ShoeVault, we believe there is a better way to meet our clients' needs. We're a company that exists to help you achieve more than you ever thought possible.
+
+      Understanding all the unique touch-points of each client is essential to our business. We focus on building reliable connections, amazing results, and trusted experiences that are as useful as they are memorable.
+      
+      Let's do great things together. We can't wait to work with you.</p>
+      <p><a href="#contact">Get in touch</a></p>
+    </div>
+    <div class="right">
+      <img src="./assets/images/about-image.jpg" alt="building">
+    </div>
+  </section>
+
+
+  <!-- products section  -->
+  <section class="products" id="products">
+    <div class="wrap">
+    <h2 class="section-title">Explore our products</h2>
+    <div class="product-cards">
+      <div class="card">
+        <img src="./assets/images/athletic.jpeg" alt="Athletic sneakers">
+        <div class="card-content">
+          <a href="./athletic.html"><h3>Athletic sneakers <span>➔</span></h3></a>
+          <p>Experience ultimate comfort with our top-rated athletic sneakers.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/images/dress.jpeg" alt="Elegant dress shoes">
+        <div class="card-content">
+          <a href="./dress.html"> <h3>Elegant dress shoes <span>➔</span></h3></a>
+          <p>Make a statement with our exquisite collection of dress shoes.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/images/loafers.jpeg" alt="Casual loafers">
+        <div class="card-content">
+          <a href="./loafer.html"><h3>Casual loafers <span>➔</span></h3></a>
+          <p>Enjoy effortless style with our comfortable casual loafers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+
+
+  <!-- contact -->
+
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <div class="contact-form">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Feel free to give us a call or send us an email with your questions or comments.</p>
+        <form action="#">
+          <div class="form-group">
+            <label for="name">Name <span>*</span></label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address <span>*</span></label>
+            <input type="email" id="email" name="email" placeholder="email@website.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number <span>*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="555-555-5555" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+          </div>
+          <div class="form-group" id="checkbox-group">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I allow this website to store my submission so they can respond to my inquiry. <span>*</span></label>
+          </div>
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h3>Contact us</h3>
+        <p><i class="fas fa-envelope"></i> dewanshpratapsingh225@gmail.com</p>
+        <h4>Location</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Kolkata, WB IN</p>
+        <h4>Hours</h4>
+        <ul>
+          <li>Monday - Friday: 9:00am – 10:00pm</li>
+          <li>Saturday: 9:00am – 6:00pm</li>
+          <li>Sunday: 9:00am – 12:00pm</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+  </footer>
+  
+
+
+  <script src="./assets/main.js"></script>
+</body>
+</html>
